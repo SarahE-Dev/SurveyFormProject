@@ -22,12 +22,12 @@
     <!--Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text-->
     <!--For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field-->
         <div class="name">
-            <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Name" required></label>
+            <label for="name" id="name-label">Name: <input class="background-color font-color" id="name" type="text" placeholder="Name" required></label>
         </div>
     <!--Inside the form element, you are required to enter your email in an input field that has an id of email-->
     <!--If you enter an email that is not formatted correctly, you will see an HTML5 validation error-->
         <div class="email">
-            <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Email Addreess" required></label>
+            <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Email Address" required></label>
         </div>
     <!--Inside the form, you can enter a number in an input field that has an id of number-->
     <!--The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser).-->
@@ -61,15 +61,17 @@
     <!--Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute-->
             
         <div class="loveus">
-            <label for="checkbox" value="loves">What did you love about us?(Check all that apply):
-                <br>
-                <br>
-                <input type="checkbox" name="loves" value="loves">Quality of Work
-                <input type="checkbox" name="loves" value="loves">Punctuality
-                <input type="checkbox" name="loves" value="loves">Completed in Timely Manner
-                <input type="checkbox" name="loves" value="loves">Knowledge of Service Provider
-                <input type="checkbox" name="loves" value="loves">Professionalism
-            </label>
+            <label class="checks" for="checkbox" value="loves">What did you love about us?(Check all that apply):</label>
+                <div class="checkboxes">
+                <div id="wrapper">
+                <label class="labels" for="checkbox" value="loves"><input type="checkbox" name="loves" value="loves">Quality of Work</label>
+                <label class="labels" for="checkbox" value="loves"><input type="checkbox" name="loves" value="loves">Punctuality</label>
+                <label class="labels" for="checkbox" value="loves"><input type="checkbox" name="loves" value="loves">Completed in Timely Manner</label>
+                <label class="labels" for="checkbox" value="loves"><input type="checkbox" name="loves" value="loves">Knowledge of Service Provider</label>
+                <label class="labels" for="checkbox" value="loves"><input type="checkbox" name="loves" value="loves">Professionalism</label>
+                </div>
+                </div>
+            
         </div>
     
     
@@ -87,6 +89,9 @@
             <button id="submit">Submit</button>
         </div>
     </form>
+<footer>
+    &copy 2023 Survey Forms Inc.
+</footer>
 
     
 </body>
