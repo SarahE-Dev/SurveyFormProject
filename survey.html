@@ -10,7 +10,9 @@
 <body>
     <div class="header">
     <!--You should have a page title in an h1 element with an id of title-->
-        <h1 id="title">Survey</h1>
+        <h1 id="title">Survey Form</h1>
+        <br>
+        <br>
     <!--You should have a short explanation in a p element with an id of description-->
         <p id="description">Tell Us How We Did! &#128516;</p>
     <!--You should have a form element with an id of survey-form-->
@@ -59,7 +61,9 @@
     <!--Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute-->
             
         <div class="loveus">
-            <label for="checkbox" value="loves">What did you love about us?(Check all that apply.)
+            <label for="checkbox" value="loves">What did you love about us?(Check all that apply):
+                <br>
+                <br>
                 <input type="checkbox" name="loves" value="loves">Quality of Work
                 <input type="checkbox" name="loves" value="loves">Punctuality
                 <input type="checkbox" name="loves" value="loves">Completed in Timely Manner
@@ -73,11 +77,13 @@
         
         <div>
                 <label for="anything" name="anything">Is there anything else you would like to tell us?</label>
+                <br>
+                <br>
                     <textarea name="anything" id="anything" rows="5" columns="15"></textarea>
 
         </div>            
     <!--Inside the form element, you are presented with a button with id of submit to submit all the inputs-->    
-        <div>
+        <div class="sub-button">
             <button id="submit">Submit</button>
         </div>
     </form>
